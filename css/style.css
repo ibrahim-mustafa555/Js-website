@@ -1,0 +1,724 @@
+/* ------------------------------------------ */
+/*             TABLE OF CONTENTS
+/* ------------------------------------------ */
+
+/*   01 - General & Basic Styles    */
+/*   02 - Navbar Styles   		    */
+/*   03 - Slider Styles   		    */
+/*   04 - About Styles   		    */
+/*   05 - Counter Styles   		    */
+/*   06 - Team Slider Styles        */
+/*   07 - Process Styles            */
+/*   08 - Latest Works Styles       */
+/*   09 - testimonial Style         */
+/*   10 - Partner Style             */
+/*   11 - Pricing-table Style       */
+/*   12 - Contact Style             */
+/*   13 - Subscribe Style           */
+/*   14 - Footer Style              */
+/*   15 - Section Loading           */
+/*   16 - Scroll Top                */
+/* ------------------------------------------ */
+
+/*   01 - General & Basic Styles   */
+html {
+  scroll-behavior: smooth;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px; 
+    color: #636363;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #292929;
+    letter-spacing: 0px;
+    font-weight: 300
+}
+
+a{
+    font-weight: 400;
+	text-decoration: none;
+}
+a:hover,
+a:focus {
+	text-decoration: none;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+a{
+	text-decoration: none;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.head-fonts {font-size: 2.25rem}
+
+/* =========================================================*/ 
+/* 02 - Navbar Styles */
+.navbar {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 0;
+}
+
+.scroll {
+    background-color: rgba(0,0,0,0.72);
+     border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 0;
+    padding: 0rem 1rem;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.navbar .navbar-nav .nav-link {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.navbar .navbar-nav .active>.nav-link ,
+.navbar .navbar-nav .nav-link:hover ,
+.navbar .navbar-nav .nav-link:focus {
+    color: #2a80b9 !important; 
+}
+
+.navbar-light .navbar-toggler{
+    color: rgba(42, 128, 185, 0.7);
+    border-color: rgba(42, 128, 185, 0.68);
+    background-color: #FFF;
+}
+
+/* =========================================================*/
+/* 03 - Slider Styles  */
+.carousel-item {
+    height: 700px;
+    background: no-repeat 0 0 scroll;
+    background-size: cover
+}
+
+.slider1 {
+    background-image: url(../img/slider1.jpg);
+}
+
+.slider2 {
+    background-image: url(../img/slider2.jpg);
+}
+
+
+.slider3 {
+    background-image: url(../img/slider3.jpg);
+}
+
+.slider .carousel-item:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(34, 38, 75, 0.2)),to(rgba(34, 38, 75, 0.5))  )repeat scroll 0 0;
+    background: linear-gradient(180deg,rgba(34, 38, 75, 0.2),rgba(34, 38, 75, 0.5)  )repeat scroll 0 0;
+}
+.slider .carousel-caption {
+    position: absolute;
+    bottom: 19%;
+}
+.slider .carousel-caption .btn-light {
+    background-color: #2a80b9;
+    padding: 8px 26px;
+    font-size: 14px;
+    border: 1px solid #2a80b9;
+}
+
+.slider .carousel-caption .btn-light:hover ,
+.slider .carousel-caption .btn-light:focus {
+    background-color: #FFF;
+    border: 1px solid #fff;
+    color: #333 !important;
+}
+
+.slider .carousel-control-next, .carousel-control-prev {
+    width: 40px;
+    height: 110px;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    border-radius: 4px;
+    -webkit-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+}
+
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+    background: #00d2c4;
+    color: #fff;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 15px;
+    height: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {background-color: #FFF}
+    .navbar .navbar-nav .nav-link {
+        color: #333 !important;
+    }
+    .slider .carousel-caption {
+        position: absolute;
+        bottom: 8%;
+    }
+    .slider .carousel-caption h1 {
+        font-size: 2rem
+    }
+}
+
+/* =========================================================*/
+/*   04 - About Styles   */
+.about-content i {
+    background-color: #2a80b9;
+    color: #FFF;
+    font-size: 20px;
+    padding: 10px;
+}
+.about-content h5 {font-weight: 500}
+/* =========================================================*/
+/*   05 - Counter Styles   */
+.counterr {
+    background-attachment: fixed
+}
+.counter-box .number {
+    font-size: 3.2rem;
+    color: #232323;
+    font-weight: 300
+}
+.counter-box span {
+    color: #232323 !important;
+    font-weight: 500;
+    font-size: .9rem
+}
+/* =========================================================*/
+/*   06 - Team Slider Styles        */
+.item .team-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.item .team-img img {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: -webkit-transform .4s ease;
+    transition: transform .4s ease;
+    transition: transform .4s ease, -webkit-transform .4s ease
+}
+
+.item .team-img:hover img {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+
+.item .item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .95);
+    width: 100%;
+    height: 100%;
+    -webkit-transition: opacity .4s ease  ;
+    transition: opacity .4s ease  ;
+}
+.item .team-img:hover .item-overlay {
+    opacity: 1;
+}
+
+.item .team-img .caption {
+    position: relative;
+    top: 100%;
+    left: 0;
+    -webkit-transition: top .5s ease ;
+    transition: top .5s ease
+}
+
+.item .team-img:hover .item-overlay .caption {
+    top: 70%
+}
+
+.item .team-img .caption h3, 
+.item .team-img .caption h6 {
+    font-weight: 600
+}
+.item .team-img .social-team li a {
+    font-size: 14px;
+}
+
+.team .owl-theme .owl-dots .owl-dot.active span, .team-img .owl-theme .owl-dots .owl-dot:hover span {
+    background: #2a80b9;
+}
+
+/* =========================================================*/
+/*   07 - Process Styles            */
+.process {
+    position: relative;
+    background-image: url(../img/process-bg.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    height: 500px
+}
+
+.process .process-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .85);
+}
+
+.process .item-process h4 {
+    font-weight: 500;
+    letter-spacing: 1px
+}
+
+/*
+.process:hover .process .owl-carousel .owl-nav button.owl-next, .process .owl-carousel .owl-nav button.owl-prev {
+    opacity: 1;
+}
+.process .owl-carousel .owl-nav button.owl-next, .process .owl-carousel .owl-nav button.owl-prev {
+    opacity: 0
+} 
+*/
+
+.process .progress {
+    height: 1.25rem;
+    font-size: .9rem;
+    border-radius: .15rem;
+}
+.progress-bar {
+    background-color: #2a80b9
+}
+
+
+.process .owl-carousel .owl-nav button.owl-next {
+    padding: 8px 13px !important;
+    background-color: rgba(255, 255, 255, .5);
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid #6363631f;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.process .owl-carousel .owl-nav button.owl-prev
+{
+     padding: 8px 13px !important;
+    background-color: rgba(255, 255, 255, .5);
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid #6363631f;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.process .owl-carousel .owl-nav button.owl-prev:hover ,
+.process .owl-carousel .owl-nav button.owl-next:hover {
+    background-color: #2a80b9
+}
+
+.carousel-nav-left , .carousel-nav-right {
+    color: #636363 !important;
+}
+
+.carousel-nav-left:hover , .carousel-nav-right:hover {
+    color: #FFF !important;
+}
+/* =========================================================*/
+/*   08 - Latest Works Styles       */
+
+.latest-work ul li {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 8px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.latest-work ul li.active, 
+.latest-work ul li:hover {
+    color: #000;
+}
+
+.latest-work .item-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.latest-work .item-img img {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: -webkit-transform .4s ease;
+    transition: transform .4s ease;
+    transition: transform .4s ease, -webkit-transform .4s ease
+}
+
+.latest-work .item-img:hover img {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+} 
+
+.latest-work .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .8);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease
+}
+
+.latest-work .item-img:hover .img-overlay {
+    opacity: 1;
+}
+.latest-work .item-img .img-caption {
+    position: relative;
+    top: 100%;
+    left: 0;
+    -webkit-transition: top .2s ease;
+    transition: top .2s ease
+}
+
+.latest-work .item-img:hover .img-caption {
+    top: 35%
+}
+.latest-work .item-img .img-caption h4 {
+    color: #2a80b9;
+    font-weight: 500
+}
+.latest-work .item-img .img-caption h6 {
+    font-weight: 500
+}
+
+/*
+
+#container .mix{
+	display: none;
+}
+*/
+/* =========================================================*/
+/*   09 - testimonial Style       */
+.testimonial {
+    background-image: url(../img/parallax-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 400px 
+}
+
+.testimonial .carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+}
+
+.testimonial .owl-theme .owl-dots .owl-dot.active span, .testimonial .owl-theme .owl-dots .owl-dot:hover span {
+    background: #2a80b9;
+}
+
+.testimonial .owl-theme .owl-dots .owl-dot span {
+    background: #FFF;
+}
+
+.testimonial .testimonial-box {
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 10px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial .testimonial-box i {
+    color: #2a80b9;
+    font-size: 25px;
+}
+.testimonial .testimonial-box h5 span {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #232323 !important;
+}
+/* =========================================================*/
+/*   10 - Partner Style       */
+.partner {
+    background-color: #2a80b9;
+}
+.partner .owl-carousel .owl-item img
+{
+    width: auto;
+    margin: auto
+}
+/* =========================================================*/
+/*   11 - Pricing-table Style       */
+
+.pricing-table .pricing-box {
+    -webkit-box-shadow: 0 2px 2px #0000001a;
+    box-shadow: 0 2px 2px #0000001a;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out
+}
+.pricing-box-colord {
+    background-color: #2a80b9 !important;
+    color: #FFF;
+}
+.pricing-box-colord .little-box h5, 
+.pricing-box-colord .little-box p, 
+.pricing-box-colord .little-box,  span ,
+.pricing-box-colord .btn-default {
+    color: #FFF !important
+}
+.pricing-table .pricing-box:hover {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-box-shadow: 0 30px 30px #0000001a;
+    box-shadow: 0 30px 30px #0000001a;
+}
+
+.pricing-table .pricing-box .little-box {
+    -webkit-box-shadow: 0px 5px 18px #0000001c;
+    box-shadow: 0px 5px 18px #0000001c
+}
+
+.pricing-box .little-box h5 {
+    font-weight: 500;
+}
+.pricing-box .little-box p { 
+    color: #333;
+    font-size: 22px
+}
+.pricing-box .little-box .month {
+    color: #333;
+    font-size: 16px
+}
+.pricing-list li {
+    border-bottom: 1px solid #2a2a2a08;
+    padding: 10px 20px
+}
+
+.pricing-box .btn-default {
+    padding: 10px 30px;
+    border: 2px solid #eee; 
+    border-radius: 35px;
+    color: #333;
+    font-size: 14px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+.pricing-box .btn-default:hover {
+    background-color: #2a80b9;
+    border: 2px solid #2a80b9; 
+    color: #fff;
+}
+.pricing-box-colord .btn-default:hover {
+    background-color: #FFF;
+    border: 2px solid #FFF;
+    color: #333 !important
+}
+/* =========================================================*/
+/*   12 - Contact Style       */
+.contact .form-control {
+    padding: 1.3rem .9rem;
+    font-size: .85rem;
+    color: #333;
+    background-color: #f9f9f9;
+    background-clip: padding-box;
+    border: 1px solid #eee;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.contact .btn-default {
+    padding: 10px 30px;
+    border: 2px solid #eee; 
+    border-radius: 35px;
+    color: #333;
+    font-size: 14px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+.contact .btn-default:hover {
+    background-color: #2a80b9;
+    border: 2px solid #2a80b9; 
+    color: #fff;
+}
+
+.contact-details .fas ,
+.contact-details .far {
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #2a80b9;
+    padding: 19px;
+    color: #FFF;
+    text-align: center
+}
+
+.contact-details h6 {
+    font-weight: 600;
+}
+/* =========================================================*/
+/*   13 - Subscribe Style       */
+
+.subscribe {
+    background-color: #2a80b9;
+}
+.subscribe .subscribe-form h3 {
+    font-size: 36px;
+    font-weight: 400;
+}
+.subscribe-form .form-control {
+    padding: 1.375rem .95rem;
+    border-radius: 1.5rem;
+}
+.subscribe-form  .btn-default {
+    padding: 10px 30px;
+    border: 2px solid #eee; 
+    border-radius: 35px;
+    color: #fff;
+    font-size: 14px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+.subscribe-form  .btn-default:hover {
+    background-color: #fff;
+    border: 2px solid #fff; 
+    color: #333;
+}
+
+.text-content a {
+    color: inherit
+}
+/* =========================================================*/
+/*   14 - Footer Style       */
+
+footer .social-media ul li a {
+    border: 1px solid #eee;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    color: #333;
+    margin: 2px;
+    text-align: center;
+    font-size: 16px;
+}
+footer .social-media ul li .facebook:hover {
+    background: #5D82D1;
+    border: 1px solid #5D82D1;
+    color: #fff
+}
+footer .social-media ul li .twitter:hover {
+    background: #40BFF5;
+    border: 1px solid #40BFF5;
+    color: #fff
+}
+footer .social-media ul li .google:hover {
+    background: #EB5E4C;
+    border: 1px solid #EB5E4C;
+    color: #fff
+}
+
+footer .social-media ul li .linkedin:hover {
+    background: #238CC8;
+    border: 1px solid #238CC8;
+    color: #fff
+}
+
+footer .social-media ul li .youtube:hover {
+    background: #CC181E;
+    border: 1px solid #CC181E;
+    color: #fff
+}
+footer .social-media ul li .skype:hover {
+    background: #00AFF0;
+    border: 1px solid #00AFF0;
+    color: #fff
+}
+  
+/* =========================================================*/
+/*   15 - Section Loading       */
+
+
+
+/*
+.loading .hidden {
+    -webkit-animation: fadeOut 1s;
+    animation: fadeOut 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+
+@-webkit-keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+*/
+/*================================*/
+/*   16 - Scroll Top      */
+#scroll-top {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: #FFF;
+    background-color: #2a80b9;
+    text-align: center;
+    right: 5px;
+    bottom: 5px;
+    position: fixed;
+    z-index: 9999;
+    display: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    -webkit-transition: all 0.2s ease ;
+    transition: all 0.2s ease ;
+    -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+#loading
+{
+    background: #FFF url(../img/status.gif) no-repeat center center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+}
